@@ -3,13 +3,13 @@
 <div class="container">
     <br>
     <div class="form">
-    <h1 class="text-center">Mande uma mensagem para nós!</h1>
+    <h1 class="text-center">Mande uma mensagem para nÃ³s!</h1>
 
     <form action="enviar.php" class="form-horizontal" method="post">
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Nome:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputEmail3" placeholder="Email" name="nome">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="Nome" name="nome">
             </div>
             <br>
             <label for="inputEmail3" class="col-sm-2 control-label">Email:</label>
@@ -17,9 +17,9 @@
                 <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
             </div>
             <br>
-            <label for="inputEmail3" class="col-sm-2 control-label">Título::</label>
+            <label for="inputEmail3" class="col-sm-2 control-label">TÃ­tulo::</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputEmail3" placeholder="Email" name="titulo">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="TÃ­tulo" name="titulo">
             </div>
             <br>
             <label for="inputEmail3" class="col-sm-2 control-label">Mensagem:</label>

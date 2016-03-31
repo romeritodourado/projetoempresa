@@ -4,16 +4,25 @@
 
 </head>
 <body>
+
 <?php
+function rotas()
+{
+    $rota = ltrim(parse_url(filter_input(INPUT_SERVER, 'REQUEST_URI'), PHP_URL_PATH), "/");
+    if($rota == "") {
+        $rota = "index";
+    }
 
-if (isset($_GET['a'])) {
-    if ($_GET['a'] == 1) {
-       return require_once 'form.php';
-
-    }else{
-        require_once "body.php";
+    $rotasValidas = array("index","empresa","produtos","servicos","contato");
+    if(!in_array($rota,$rotasValidas)OR!file_exists($rota .".php")){
+        header("Status: 404 Not Found");
+    }
+    else{
+        require_once ($rota.".php");
     }
 }
+
+rotas();
 
 ?>
 <?php require "body.php"; ?>
